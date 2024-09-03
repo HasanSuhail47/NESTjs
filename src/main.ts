@@ -7,7 +7,7 @@ async function bootstrap() {
   //main module of the app
   const app = await NestFactory.create(AppModule);
 
-  //Making validation global in the entire app
+  //Making pipe validation global in the entire app
   app.useGlobalPipes(new ValidationPipe());
   
   //using port 3000 to listen
