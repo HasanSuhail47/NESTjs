@@ -60,11 +60,14 @@ export class ProductsService {
 
     deleteproduct(id:number){
 
+        //filtering out the products that doesn't matche the id and rewriting the array
         this.products = this.products.filter((p)=> p.id !== id)
         return { message: 'Product deleted successfully' };
     }
 
+
     searchProducts(search: string): Product[] {
+        //filtering out the products and returning which matches the search string
         return this.products.filter((p) => { 
             return (
                 p.name.includes(search) ||

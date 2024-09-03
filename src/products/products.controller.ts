@@ -8,6 +8,9 @@ export class ProductsController {
     constructor(private readonly productservice:ProductsService){}
     //API's routes
 
+    //@Body() can be used to access the body object of the request and @Query can be used to access the query param
+
+
     //Get request to get all the products
     @Get()
     getproducts(){
@@ -28,7 +31,6 @@ export class ProductsController {
     }
 
     //Creating a new product
-    //@Body() can be used to access the body object of the request and @Query can be used to access the query param
     @Post()
     createproduct(@Body() createProduct:CreateProduct){
         return this.productservice.createproduct(createProduct);
