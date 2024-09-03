@@ -6,6 +6,32 @@ Setup:
 
 3- To run the Project type npm start
 
+Api end points:
+
+Get :http://localhost:3000/products
+
+Get(id) :http://localhost:3000/products/id
+
+Post: http://localhost:3000/products
+    Body:
+    {
+      "name":"NAME",
+      "price":000,
+      "category":"CATEGORY",
+      "description":"DESCRIPTION"
+    }
+
+Put: http://localhost:3000/products/id
+     Body:
+    {
+      "name":"NAME",
+      "price":000,
+      "category":"CATEGORY",
+      "description":"DESCRIPTION"
+    }     
+
+Delete: http://localhost:3000/products/id
+
 Tutorial
 
 1- You can create all CRUD controllers and services in one command nest g resource products
