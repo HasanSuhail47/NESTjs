@@ -8,11 +8,11 @@ Setup:
 
 Api end points:
 
-Get :http://localhost:3000/products
+Get :https://nestjs-production-61f6.up.railway.app/products
 
-Get(id) :http://localhost:3000/products/id
+Get(id) :https://nestjs-production-61f6.up.railway.app/products/id
 
-Post: http://localhost:3000/products
+Post: https://nestjs-production-61f6.up.railway.app/products
     Body:
     {
       "name":"NAME",
@@ -21,7 +21,7 @@ Post: http://localhost:3000/products
       "description":"DESCRIPTION"
     }
 
-Put: http://localhost:3000/products/id
+Put: https://nestjs-production-61f6.up.railway.app/products/id
      Body:
     {
       "name":"NAME",
@@ -30,7 +30,7 @@ Put: http://localhost:3000/products/id
       "description":"DESCRIPTION"
     }     
 
-Delete: http://localhost:3000/products/id
+Delete: https://nestjs-production-61f6.up.railway.app/products/id
 
 Tutorial
 
